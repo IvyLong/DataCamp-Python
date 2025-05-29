@@ -122,6 +122,38 @@ status = "adult" if age >= 18 else "minor"
 print(status)  # Output: adult
 ```
 
+### Quiz
+```Python
+# Program 1
+score = 95
+if score >= 80:
+    grade = "A"
+elif score >= 90:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+print(f"Your grade is: {grade}")
+
+// program 2
+score = 95
+if score >= 80:
+    grade = "A"
+if score >= 90:
+    grade = "B"
+if score >= 70:
+    grade = "C"
+if score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+print(f"Your grade is: {grade}")
+
+```
+
 ## Loops
 
 Loops allow you to execute a block of code multiple times.

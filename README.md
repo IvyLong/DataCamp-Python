@@ -1,6 +1,8 @@
 # Python Course Curriculum
 
-## 1. Introduction to Python
+Week 1
+---
+## 1. Introduction to Python 
 - Python's history and philosophy
 - Installing Python and setting up your environment
 - Python IDEs and text editors (VS Code, PyCharm, etc.)
@@ -19,6 +21,9 @@
 - Loops (for loops and while loops)
 - Break, continue, and pass statements
 - Match statements (Python 3.10+)
+
+Week 2
+---
 
 ## 4. Data Structures
 - Lists and list operations
@@ -46,6 +51,10 @@
 - Virtual environments
 - Using third-party libraries
 
+
+Week 3
+--- 
+
 ## 7. File Handling
 - Reading and writing text files
 - Working with CSV files
@@ -60,6 +69,8 @@
 - Debugging techniques
 - Handling multiple exceptions
 
+Week 4
+---
 ## 9. Object-Oriented Programming
 - Classes and objects
 - Attributes and methods
@@ -70,6 +81,8 @@
 - Private variables and name mangling
 - Class and static methods
 
+TBC
+--- 
 ## 10. Advanced Python Concepts
 - Iterators and generators
 - Decorators
