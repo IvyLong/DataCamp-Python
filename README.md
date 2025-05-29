@@ -1,3 +1,10 @@
+# Prerequisite
+- Git set up: [link](./git_set_up.md)
+- Git clone the repo by running `git clone https://github.com/IvyLong/DataCamp-Python.git` in terminal.
+- Python installation: [link](./python_set_up.md)
+- Vscode set up: [link](./vscode_set_up.md)
+- (Optional) Github authentication set up: [link](./github_set_up.md)
+
 # Python Course Curriculum
 
 Week 1
