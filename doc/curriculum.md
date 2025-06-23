@@ -96,7 +96,7 @@ TBC
 - CSV and Excel file handling
 
 ## 12. Web Development Basics
-- Introduction to web frameworks (Flask or Django)
+- Introduction to web frameworks (Flask)
 - Building a simple web application
 - Working with APIs
 - HTTP requests with the requests library
