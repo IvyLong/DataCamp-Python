@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Control Flow in Python
 
 ## Learning Objectives
@@ -7,9 +11,13 @@ By the end of this section, you will be able to:
 - Control program flow with `break`, `continue`, and `pass` statements
 - Use the new `match` statement (Python 3.10+) for pattern matching
 
+---
+
 ## Conditional Statements
 
 Conditional statements allow your program to make decisions based on certain conditions.
+
+---
 
 ### Basic `if` Statement
 
@@ -32,6 +40,8 @@ if age >= 18:
 
 print("This will print regardless of the condition.")
 ```
+
+---
 
 ### `if-else` Statement
 
@@ -56,6 +66,8 @@ else:
     print("You are a minor.")
     print("You cannot vote yet.")
 ```
+
+---
 
 ### `if-elif-else` Statement
 
@@ -91,6 +103,8 @@ else:
 print(f"Your grade is: {grade}")
 ```
 
+---
+
 ### Nested Conditionals
 
 You can place conditional statements inside other conditional statements.
@@ -111,6 +125,8 @@ else:
     print("Check the weather forecast.")
 ```
 
+---
+
 ### Conditional Expressions (Ternary Operator)
 
 Python supports a compact way to write simple if-else statements:
@@ -121,6 +137,7 @@ age = 20
 status = "adult" if age >= 18 else "minor"
 print(status)  # Output: adult
 ```
+---
 
 ### Quiz
 ```Python
@@ -153,6 +170,7 @@ else:
 print(f"Your grade is: {grade}")
 
 ```
+---
 
 ## Loops
 
@@ -167,6 +185,7 @@ A `for` loop is used to iterate over a sequence (like a list, tuple, string, or 
 for item in sequence:
     # code to execute for each item
 ```
+---
 
 #### Iterating Through Ranges
 
@@ -185,6 +204,7 @@ for i in range(2, 6):
 for i in range(0, 10, 2):
     print(i)  # Outputs: 0, 2, 4, 6, 8
 ```
+---
 
 #### Iterating Through Collections
 
@@ -209,6 +229,7 @@ for key in student:
 for key, value in student.items():
     print(f"{key}: {value}")
 ```
+---
 
 #### Using `enumerate()` for Index and Value
 
@@ -217,6 +238,7 @@ fruits = ["apple", "banana", "cherry"]
 for index, fruit in enumerate(fruits):
     print(f"{index + 1}: {fruit}")
 ```
+---
 
 ### `while` Loops
 
@@ -236,6 +258,7 @@ while count <= 5:
     print(count)
     count += 1  # Don't forget to update the condition variable!
 ```
+---
 
 #### Infinite Loops
 
@@ -252,8 +275,11 @@ while True:
     if response.lower() == "no":
         break  # Exit the loop
 ```
+---
 
 ## Loop Control Statements
+
+---
 
 ### The `break` Statement
 
@@ -277,6 +303,7 @@ while True:
     print(count)
 # Outputs: 1, 2, 3, 4, 5
 ```
+---
 
 ### The `continue` Statement
 
@@ -300,6 +327,8 @@ while count < 10:
 # Outputs: 1, 3, 5, 7, 9
 ```
 
+---
+
 ### The `pass` Statement
 
 The `pass` statement is a no-operation placeholder. It does nothing but avoids syntax errors when a statement is required:
@@ -312,6 +341,7 @@ for i in range(5):
     else:
         print(i)
 ```
+---
 
 ## The `match` Statement (Python 3.10+)
 
@@ -329,6 +359,7 @@ match value:
     case _:
         # default case if no pattern matches
 ```
+---
 
 Example:
 ```python
@@ -349,6 +380,8 @@ print(day_type("Monday"))  # Start of work week
 print(day_type("Saturday"))  # Weekend
 print(day_type("Holiday"))  # Invalid day
 ```
+
+---
 
 ### Pattern Matching with Structures
 
@@ -372,6 +405,7 @@ print(process_command("quit"))  # Exiting program
 print(process_command("load data.txt"))  # Loading file: data.txt
 print(process_command("search python tutorial"))  # Searching for: python tutorial
 ```
+---
 
 ### Pattern Matching with Guards
 

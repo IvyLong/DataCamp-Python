@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Python Fundamentals
 
 ## Learning Objectives
@@ -7,6 +11,8 @@ By the end of this section, you will be able to:
 - Accept user input and display output
 - Write effective comments and documentation
 - Convert between different data types
+
+---
 
 ## Variables and Data Types
 
@@ -23,6 +29,8 @@ is_student = True     # Boolean
 ```
 
 Variables in Python don't need explicit type declarations. Python determines the variable type based on the assigned value.
+
+---
 
 ### Naming Rules
 
@@ -42,6 +50,7 @@ score1 = 95.5
 # 1user = "John"    # Cannot start with a number
 # if = "keyword"    # Cannot use a Python keyword
 ```
+---
 
 ### Common Data Types
 
@@ -56,6 +65,7 @@ zero = 0
 # Large integers are handled automatically
 population = 7800000000
 ```
+---
 
 #### 2. Floating-Point Numbers (Floats)
 Numbers with a decimal point.
@@ -69,6 +79,8 @@ pi_approximate = 3.14159
 electron_mass = 9.1e-31  # 9.1 × 10^-31
 ```
 
+---
+
 #### 3. Strings
 Sequences of characters, enclosed in single or double quotes.
 
@@ -81,6 +93,7 @@ address = """123 Main Street
 Anytown, USA
 12345"""
 ```
+---
 
 #### 4. Booleans
 Represent truth values: `True` or `False`.
@@ -93,6 +106,7 @@ is_completed = False
 is_adult = age >= 18
 is_valid = name != ""
 ```
+---
 
 #### 5. None Type
 Represents the absence of a value.
@@ -116,6 +130,7 @@ print(type(age))       # <class 'int'>
 print(type(height))    # <class 'float'>
 print(type(is_student))  # <class 'bool'>
 ```
+---
 
 ## Basic Operators and Expressions
 
@@ -137,6 +152,7 @@ power = a ** b             # Exponentiation: 1000 (10^3)
 result = 5 + 3 * 2         # 11 (multiplication has precedence)
 result = (5 + 3) * 2       # 16 (parentheses change precedence)
 ```
+---
 
 ### Assignment Operators
 
@@ -153,6 +169,8 @@ x **= 3               # x = x ** 3 (x is now 8.0)
 x //= 3               # x = x // 3 (x is now 2.0)
 ```
 
+---
+
 ### Comparison Operators
 
 ```python
@@ -166,6 +184,8 @@ print(a < b)   # Less than: False
 print(a >= b)  # Greater than or equal to: True
 print(a <= b)  # Less than or equal to: False
 ```
+
+---
 
 ### Logical Operators
 
@@ -183,6 +203,8 @@ income = 50000
 is_eligible = (age > 18) and (income > 30000)  # True
 ```
 
+---
+
 ### Identity Operators
 
 ```python
@@ -195,6 +217,8 @@ print(a is b)     # False (a and b are equal but different objects)
 print(a is not b) # True
 ```
 
+---
+
 ### Membership Operators
 
 ```python
@@ -204,6 +228,7 @@ print("apple" in fruits)       # True
 print("orange" in fruits)      # False
 print("orange" not in fruits)  # True
 ```
+---
 
 ## Input and Output Operations
 
@@ -224,7 +249,10 @@ print("World")  # Prints "Hello World" on one line
 
 # Formatting with f-strings (Python 3.6+)
 print(f"My name is {name} and I am {age} years old.")
+```
+---
 
+```python
 # Formatting with format() method
 print("My name is {} and I am {} years old.".format(name, age))
 
@@ -237,6 +265,8 @@ print("My name is {n} and I am {a} years old.".format(n=name, a=age))
 # Older style string formatting (still works)
 print("My name is %s and I am %d years old." % (name, age))
 ```
+
+---
 
 ### Input with `input()`
 
@@ -256,6 +286,8 @@ print(f"In five years, you'll be {age + 5} years old.")
 height = float(input("Enter your height in meters: "))
 print(f"Your height is {height} meters.")
 ```
+
+---
 
 ## Comments and Documentation
 
@@ -280,6 +312,8 @@ This style is often used for multi-line comments
 """
 ```
 
+---
+
 ### Docstrings
 
 Docstrings are strings used to document functions, classes, and modules.
@@ -301,6 +335,8 @@ def calculate_area(length, width):
 # You can access docstrings using the __doc__ attribute
 print(calculate_area.__doc__)
 ```
+
+---
 
 ## Type Conversion
 
@@ -344,6 +380,8 @@ print(bool(""))     # False
 print(bool("text")) # True
 ```
 
+---
+
 ### Type Conversion Pitfalls
 
 ```python
@@ -359,6 +397,7 @@ print(round(result, 2))  # 0.3 (rounded to 2 decimal places)
 # Converting to integer truncates (doesn't round)
 print(int(9.9))      # 9 (not 10)
 ```
+---
 
 ## Practice Exercises
 
