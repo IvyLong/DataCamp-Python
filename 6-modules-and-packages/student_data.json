@@ -1,0 +1,16 @@
+{
+  "name": "Alice Johnson",
+  "age": 22,
+  "grades": [
+    85,
+    90,
+    92,
+    88
+  ],
+  "is_enrolled": true,
+  "courses": [
+    "Python",
+    "Data Science",
+    "Web Development"
+  ]
+}
